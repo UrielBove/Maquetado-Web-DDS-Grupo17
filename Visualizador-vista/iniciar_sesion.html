@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MetaMap - Login</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Merriweather:ital,wght@0,700;0,300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="iniciar_sesion.css">
+</head>
+<body>
+  <main class="page" role="main">
+    <!-- decorative geometric background is pure CSS -->
+    <div class="bg-decor" aria-hidden="true"></div>
+
+    <!-- centered login card -->
+    <section class="login-wrap" aria-labelledby="login-title">
+      <div class="logo-pill" aria-hidden="true">
+        <span class="meta">Meta</span><span class="map">Map</span>
+      </div>
+
+      <div class="login-card" role="form" aria-labelledby="login-title">
+        <h2 id="login-title" class="login-title">LOGIN</h2>
+
+        <form action="#" method="post" novalidate>
+          <div class="field">
+            <label for="user">Email/Usuario</label>
+            <input id="user" name="user" type="text" inputmode="email" autocomplete="username" required aria-required="true" placeholder=" ">
+          </div>
+
+          <div class="field">
+            <label for="password">Contraseña</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" required aria-required="true" placeholder=" ">
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="btn primary">Iniciar Sesion</button>
+          </div>
+
+          <p class="helper">No estas registrado?</p>
+
+          <div class="actions">
+            <a class="btn secondary" href="registrar.html" role="button">Registrarse</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
