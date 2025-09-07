@@ -1,18 +1,7 @@
-/* styles.css - Login view matching provided mockup */
+@import "/CSS/reset.css";
+@import "/CSS/estilos.css";
 
-/* Basic reset */
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%}
-body{
-  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
-  background:#2f2a3d;
-  color:#111;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-}
-
-/* Page layout */
-.page{
+.pagina{
   min-height:100vh;
   display:grid;
   place-items:center;
@@ -20,42 +9,38 @@ body{
   padding:28px;
 }
 
-/* Decorative geometric background (CSS shapes) */
-.bg-decor{
+.fondo-decorativo{
   position:fixed;
   inset:0;
   z-index:0;
   background:
-    linear-gradient(120deg, rgba(58,52,74,0.95) 0 30%, rgba(44,40,58,0.95) 30% 60%, rgba(62,56,80,0.95) 60% 100%),
-    radial-gradient(1200px 400px at 10% 20%, rgba(56,50,72,0.7), transparent 30%),
-    radial-gradient(900px 500px at 90% 80%, rgba(40,36,50,0.6), transparent 30%);
+    linear-gradient(120deg, var(--fondo-stop-1) 0 30%, var(--fondo-stop-2) 30% 60%, var(--fondo-stop-3) 60% 100%),
+    radial-gradient(1200px 400px at 10% 20%, var(--fondo-radial-1), transparent 30%),
+    radial-gradient(900px 500px at 90% 80%, var(--fondo-radial-2), transparent 30%);
   clip-path: polygon(0 0, 65% 0, 100% 20%, 100% 100%, 0% 100%);
 }
 
-/* Login wrap centers the card */
-.login-wrap{
+.envoltura-login{
   width:860px;
   max-width:100%;
   position:relative;
   z-index:2;
   display:flex;
   justify-content:center;
-  padding-top:34px; /* so logo-pill overlaps like in screenshot */
+  padding-top:34px;
 }
 
-/* pill logo that overlaps top edge of card */
-.logo-pill{
+.logo-pildora{
   position:absolute;
   top:8px;
   left:50%;
   transform:translateX(-50%);
   z-index:5;
-  background:#fff;
+  background:var(--color-superficie);
   padding:6px 18px;
   border-radius:26px;
   border:2px solid rgba(0,0,0,0.06);
-  box-shadow:0 6px 18px rgba(0,0,0,0.18);
-  font-family: 'Merriweather', serif;
+  box-shadow:0 6px 18px var(--overlay-negro-18);
   font-size:22px;
   display:flex;
   gap:4px;
@@ -63,18 +48,16 @@ body{
   justify-content:center;
 }
 
-/* style MetaMap text inside pill - 'Meta' normal, 'Map' bold */
-.logo-pill .meta{font-weight:400;color:#111}
-.logo-pill .map{font-weight:800;color:#111}
+.logo-pildora .meta{font-weight:400;color:var(--color-texto)}
+.logo-pildora .map{font-weight:800;color:var(--color-texto)}
 
-/* Card */
-.login-card{
-  background:#fff;
+.tarjeta-login{
+  background:var(--color-superficie);
   width:720px;
   max-width:calc(100% - 120px);
   border-radius:26px;
   padding:42px 56px 36px;
-  box-shadow: 0 18px 38px rgba(11,9,20,0.35);
+  box-shadow: 0 18px 38px var(--sombra-fuerte);
   border:1px solid rgba(0,0,0,0.06);
   display:flex;
   flex-direction:column;
@@ -83,55 +66,50 @@ body{
   position:relative;
 }
 
-/* Title */
-.login-title{
+.titulo-login{
   font-size:14px;
-  color:#111;
+  color:var(--color-texto);
   font-weight:600;
   margin-top:10px;
   align-self:center;
 }
 
-/* Form fields */
-.field{
+.campo{
   width:100%;
   display:flex;
   flex-direction:column;
   gap:8px;
   margin-top:6px;
 }
-.field label{
+.campo label{
   font-size:14px;
-  color:#222;
+  color:var(--color-texto);
   font-weight:500;
 }
 
-/* inputs styled as rounded pills with thin blue border like screenshot */
-.field input{
+.campo input{
   height:38px;
   border-radius:20px;
   padding:10px 16px;
   font-size:15px;
-  border:2px solid #2b2a76; /* deep blue outline */
+  border:2px solid var(--color-principal);
   outline:none;
   transition:box-shadow .15s, transform .08s;
 }
-.field input::placeholder{color:transparent}
+.campo input::placeholder{color:transparent}
 
-/* focus state */
-.field input:focus{
-  box-shadow:0 6px 18px rgba(43,42,118,0.12);
+.campo input:focus{
+  box-shadow:0 6px 18px var(--sombra-suave);
   transform:translateY(-1px);
 }
 
-/* Actions */
-.actions{
+.acciones{
   width:100%;
   display:flex;
   justify-content:center;
   margin-top:10px;
 }
-.btn{
+.boton{
   display:inline-block;
   text-decoration:none;
   padding:8px 26px;
@@ -144,42 +122,38 @@ body{
   border:0;
 }
 
-/* primary button - dark blue pill */
-.btn.primary{
-  background:linear-gradient(180deg,#2b2a76,#232260);
-  color:#fff;
+.boton.primario{
+  background:linear-gradient(180deg,var(--color-principal),var(--color-principal-700));
+  color:var(--color-texto-inverse);
   box-shadow:0 6px 18px rgba(42,41,110,0.28);
   border:1px solid rgba(255,255,255,0.06);
 }
 
-/* secondary button - lighter fill but still blue */
-.btn.secondary{
-  background:linear-gradient(180deg,#2b2a76,#232260);
-  color:#fff;
+.boton.secundario{
+  background:linear-gradient(180deg,var(--color-principal),var(--color-principal-700));
+  color:var(--color-texto-inverse);
   box-shadow:0 6px 18px rgba(42,41,110,0.2);
   border:1px solid rgba(0,0,0,0.06);
   min-width:200px;
 }
 
-/* helper text */
-.helper{
+.ayuda{
   font-size:14px;
-  color:#18307a;
+  color:var(--color-principal);
   text-align:center;
   width:100%;
   margin-top:6px;
 }
 
-/* responsive & smaller card adjustments */
 @media (max-width:820px){
-  .login-card{padding:28px 28px;border-radius:20px}
-  .logo-pill{top:6px;padding:6px 14px}
-  .btn.primary,.btn.secondary{min-width:140px}
-  .login-wrap{padding-top:22px}
-  .bg-decor{opacity:0.95}
+  .tarjeta-login{padding:28px 28px;border-radius:20px}
+  .logo-pildora{top:6px;padding:6px 14px}
+  .boton.primario,.boton.secundario{min-width:140px}
+  .envoltura-login{padding-top:22px}
+  .fondo-decorativo{opacity:0.95}
 }
 @media (max-width:480px){
-  .login-card{width:92%;padding:22px}
-  .logo-pill{font-size:18px}
-  .field input{height:40px}
+  .tarjeta-login{width:92%;padding:22px}
+  .logo-pildora{font-size:18px}
+  .campo input{height:40px}
 }

@@ -1,3 +1,44 @@
-body{
-    background-color: cadetblue;
+/* colors.css - palette centralizada para MetaMap */
+:root{
+  /* Primarios / Brand */
+  --color-principal: #2b2a76;
+  --color-principal-700: #232260;
+
+  /* Navegación / fondos oscuros */
+  --color-navegacion: #2b3b55;
+  --color-encabezado: #3e3850;
+  --color-pie: #243248;
+
+  /* Superficies claras */
+  --color-superficie: #ffffff;
+  --color-superficie-100: #f3f6fb;
+  --color-borde: #e6e6e6;
+
+  /* Texto */
+  --color-texto: #222222;
+  --color-texto-muted: #6b6b6b;
+  --color-texto-secondary: #555555;
+  --color-texto-inverse: #ffffff;
+
+  /* Accentos / etiquetas */
+  --color-acento: #f0f4ff;
+  --color-tag-texto: #21324a;
+
+  /* Fondo decorativo (stops para gradientes) */
+  --fondo-stop-1: rgba(58,52,74,0.95);
+  --fondo-stop-2: rgba(44,40,58,0.95);
+  --fondo-stop-3: rgba(62,56,80,0.95);
+  --fondo-radial-1: rgba(56,50,72,0.70);
+  --fondo-radial-2: rgba(40,36,50,0.60);
+
+  /* Sombras y overlays */
+  --sombra-fuerte: rgba(11,9,20,0.35);
+  --sombra-suave: rgba(42,41,110,0.12);
+  --overlay-negro-10: rgba(0,0,0,0.10);
+  --overlay-negro-18: rgba(0,0,0,0.18);
+
+  /* Utilities - variantes */
+  --principal-90: rgba(43,42,118,0.9);
+  --principal-70: rgba(43,42,118,0.7);
+  --principal-30: rgba(43,42,118,0.3);
 }
