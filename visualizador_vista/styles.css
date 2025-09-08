@@ -20,7 +20,7 @@ body {
   background: var(--color-navegacion);
   color: var(--color-texto-inverse);
   padding: 10px 0;
-  border-bottom: 4px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 4px solid var(--overlay-negro-18);
 }
 .encabezado-interior {
   display: flex;
@@ -57,7 +57,7 @@ body {
   opacity: 0.95;
 }
 .btn-iniciar {
-  background-color: #FF6B35;
+  background-color: var(--color-cta);
   padding: 8px 12px;
   border-radius: 6px;
   font-weight: 600;
@@ -90,9 +90,10 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.25);
+  background: var(--color-superficie);
+  opacity: 0.25;
   display: inline-block;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 1px 0 var(--overlay-negro-10) inset;
 }
 .punto.activo {
   background: var(--color-texto-inverse);
@@ -142,7 +143,7 @@ body {
   height: 10px;
 }
 .tarjetas::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.08);
+  background: var(--overlay-negro-08);
   border-radius: 10px;
 }
 
@@ -152,7 +153,7 @@ body {
   width: 250px;
   border: 1px solid var(--color-borde);
   border-radius: 10px;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
+  box-shadow: 0 2px 0 var(--overlay-negro-02);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -181,7 +182,8 @@ body {
   color: var(--color-texto-muted);
 }
 .categoria {
-  background: rgba(243, 246, 251, 0.25);
+  background: var(--color-superficie);
+  opacity: 0.25;
   padding: 4px 8px;
   border-radius: 8px;
   font-weight: 600;
@@ -223,7 +225,7 @@ body {
 .separador {
   border: none;
   height: 1px;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.02));
+  background: linear-gradient(90deg, var(--overlay-negro-18), var(--overlay-negro-10));
   margin: 26px 0 60px 0;
 }
 
@@ -263,7 +265,8 @@ body {
   margin: 0;
 }
 .grid-pie a {
-  color: rgba(255, 255, 255, 0.86);
+  color: var(--color-superficie);
+  opacity: 0.86;
   text-decoration: none;
   font-size: 0.9rem;
 }
