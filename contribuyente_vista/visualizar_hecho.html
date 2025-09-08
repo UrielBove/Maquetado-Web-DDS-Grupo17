@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>MetaMap — Hecho</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Merriweather:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="visualizar_hecho_styles.css" />
+  </head>
+  <body>
+    <header class="encabezado-sitio" role="banner">
+      <div class="contenedor encabezado-interior">
+        <a class="marca" href="index.html" aria-label="MetaMap Home">
+          <span class="caja-marca">MetaMap</span>
+        </a>
+
+        <nav
+          class="nav-principal"
+          role="navigation"
+          aria-label="Menú principal"
+        >
+          <ul>
+            <li class="nav-con-iconos">
+              <a href="#" title="Centro de Ayuda"
+                ><i class="icon fas fa-question-circle"></i
+              ></a>
+            </li>
+            <li class="nav-con-iconos">
+              <a href="#" title="Hechos"><i class="icon fas fa-book"></i></a>
+            </li>
+            <li class="nav-con-iconos">
+              <a href="#" title="Colecciones"
+                ><i class="icon fas fa-th-large"></i
+              ></a>
+            </li>
+            <li class="nav-con-iconos iniciar_sesion">
+              <a
+                class="btn-iniciar"
+                href="iniciar_sesion.html"
+                title="Iniciar Sesión"
+                ><i class="icon fas fa-user"></i
+              ></a>
+            </li>
+            <li class="nav-con-texto"><a href="#">Centro de Ayuda</a></li>
+            <li class="nav-con-texto"><a href="#">Hechos</a></li>
+            <li class="nav-con-texto"><a href="#">Colecciones</a></li>
+            <li class="nav-con-texto">
+              <a class="btn-iniciar" href="iniciar_sesion.html"
+                >Iniciar Sesión</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="pagina-grid" role="main">
+      <div class="espacio-izquierdo" aria-hidden="true"></div>
+
+      <main class="lienzo" id="principal">
+        <article class="hecho" aria-labelledby="titulo-hecho">
+          <h1 id="titulo-hecho" class="titulo">Título Hecho</h1>
+
+          <div
+            class="fila-hecho"
+            role="region"
+            aria-label="Contenido principal del hecho"
+          >
+            <figure class="galeria" aria-label="Galería de imágenes">
+              <img
+                id="imagen-principal"
+                class="imagen"
+                src="https://picsum.photos/seed/fuego/640/420"
+                alt="Imagen principal del hecho"
+              />
+              <figcaption class="sr-only">Galería de imágenes</figcaption>
+              <div
+                class="seleccion-imagenes"
+                role="tablist"
+                aria-label="Seleccionar imagen"
+              >
+                <button
+                  class="selector activo"
+                  aria-selected="true"
+                  title="Imagen 1"
+                  aria-controls="imagen-principal"
+                ></button>
+                <button
+                  class="selector"
+                  aria-selected="false"
+                  title="Imagen 2"
+                  aria-controls="imagen-principal"
+                ></button>
+                <button
+                  class="selector"
+                  aria-selected="false"
+                  title="Imagen 3"
+                  aria-controls="imagen-principal"
+                ></button>
+                <button
+                  class="selector"
+                  aria-selected="false"
+                  title="Imagen 4"
+                  aria-controls="imagen-principal"
+                ></button>
+              </div>
+            </figure>
+
+            <aside class="meta" aria-labelledby="encabezado-meta">
+              <h2 id="encabezado-meta" class="meta-titulo">DETALLES</h2>
+              <dl class="datos-meta">
+                <dt>Categoría:</dt>
+                <dd><span class="valor">Medio Ambiente</span></dd>
+                <dt>Fuente:</dt>
+                <dd><a class="enlace" href="#">Ejemplo Diario</a></dd>
+                <dt>Ubicación:</dt>
+                <dd><span class="valor">Corrientes, Argentina</span></dd>
+                <dt>Fecha:</dt>
+                <dd><time datetime="2025-09-05">05/09/2025</time></dd>
+              </dl>
+            </aside>
+          </div>
+
+          <section class="descripcion" aria-label="Descripción">
+            <p class="parrafo-destacado">
+              Lorem ipsum es texto de relleno de la industria de la impresión y
+              la composición tipográfica. Ha sido el texto de relleno estándar
+              desde el siglo XVI.
+            </p>
+            <p class="parrafo">
+              Sobrevive no solo cinco siglos, sino también la transición a la
+              composición electrónica, manteniéndose esencialmente sin cambios.
+            </p>
+            <div class="zona-acciones">
+              <button
+                id="boton-solicitar-eliminacion"
+                class="boton boton-solicitar"
+                aria-haspopup="dialog"
+                aria-controls="modal-eliminacion"
+              >
+                SOLICITAR ELIMINACIÓN
+              </button>
+            </div>
+          </section>
+        </article>
+      </main>
+
+      <footer class="pie-sitio" role="contentinfo">
+        <div class="contenedor pie-interior">
+          <div class="pie-superior">
+            <div class="marca-pie">
+              <span class="caja-marca small">MetaMap</span>
+            </div>
+
+            <div class="redes" aria-hidden="true">
+              <i class="icon fa-brands fa-facebook-f"></i>
+              <i class="icon fa-brands fa-linkedin-in"></i>
+              <i class="icon fa-brands fa-youtube"></i>
+              <i class="icon fa-brands fa-twitter"></i>
+              <i class="icon fa-brands fa-instagram"></i>
+            </div>
+          </div>
+
+          <div class="grid-pie">
+            <div>
+              <h4>NOSOTROS</h4>
+              <ul>
+                <li><a href="#">Nuestro Equipo</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h4>LEGAL</h4>
+              <ul>
+                <li><a href="#">Información Legal</a></li>
+                <li><a href="#">Términos y Privacidad</a></li>
+              </ul>
+            </div>
+
+            <div class="columna-vacia"></div>
+          </div>
+
+          <div class="pie-inferior">
+            <p>© 2025 MetaMap</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div
+      id="modal-eliminacion"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="titulo-modal"
+      aria-hidden="true"
+    >
+      <div class="panel" role="document">
+        <header class="cabecera-panel">
+          <h3 id="titulo-modal">Solicitud de eliminación</h3>
+          <button
+            id="cerrar-modal"
+            class="boton-cerrar"
+            aria-label="Cerrar ventana"
+          >
+            &times;
+          </button>
+        </header>
+        <div class="cuerpo-panel">
+          <label for="texto-razon" class="etiqueta"
+            >¿Por qué desea eliminar este hecho?
+          </label>
+          <textarea
+            id="texto-razon"
+            class="area-texto"
+            rows="6"
+            placeholder="Razón..."
+            aria-required="true"
+          ></textarea>
+          <p class="nota">Describa la razón y aporte evidencia si la tiene.</p>
+        </div>
+        <footer class="pie-panel">
+          <button id="enviar-solicitud" class="boton boton-enviar">
+            ENVIAR SOLICITUD
+          </button>
+        </footer>
+      </div>
+    </div>
+
+    <div id="fondo-modal" class="fondo" aria-hidden="true"></div>
+
+    <script src="visualizar_hecho_script.js"></script>
+  </body>
+</html>
