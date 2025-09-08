@@ -12,12 +12,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="visualizar_hecho_styles.css" />
+    <link rel="stylesheet" href="visualizar_hecho_propio_styles.css" />
   </head>
   <body>
     <header class="encabezado-sitio" role="banner">
       <div class="contenedor encabezado-interior">
-        <a class="marca" href="index.html" aria-label="MetaMap Home">
+        <a class="marca" href="#" aria-label="MetaMap Home">
           <span class="caja-marca">MetaMap</span>
         </a>
 
@@ -40,21 +40,11 @@
                 ><i class="icon fas fa-th-large"></i
               ></a>
             </li>
-            <li class="nav-con-iconos iniciar_sesion">
-              <a
-                class="btn-iniciar"
-                href="iniciar_sesion.html"
-                title="Iniciar Sesión"
-                ><i class="icon fas fa-user"></i
-              ></a>
-            </li>
             <li class="nav-con-texto"><a href="#">Centro de Ayuda</a></li>
             <li class="nav-con-texto"><a href="#">Hechos</a></li>
             <li class="nav-con-texto"><a href="#">Colecciones</a></li>
-            <li class="nav-con-texto">
-              <a class="btn-iniciar" href="iniciar_sesion.html"
-                >Iniciar Sesión</a
-              >
+            <li class="profile-icon" id="profileBtn">
+              <i class="fa-solid fa-user"></i>
             </li>
           </ul>
         </nav>
@@ -152,6 +142,17 @@
         </article>
       </main>
 
+      <div class="sidebar" id="sidebar">
+        <h3>Username</h3>
+        <p>Contribuyente</p>
+        <ul>
+          <li>Mis hechos</li>
+          <li>Solicitudes de eliminación</li>
+          <li>Mi Cuenta</li>
+        </ul>
+      </div>
+      <div class="overlay" id="overlay"></div>
+
       <footer class="pie-sitio" role="contentinfo">
         <div class="contenedor pie-interior">
           <div class="pie-superior">
@@ -237,6 +238,6 @@
 
     <div id="fondo-modal" class="fondo" aria-hidden="true"></div>
 
-    <script src="visualizar_hecho_script.js"></script>
+    <script src="visualizar_hecho_propio_script.js"></script>
   </body>
 </html>
