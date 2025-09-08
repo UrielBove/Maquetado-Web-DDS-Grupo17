@@ -1,16 +1,12 @@
 @import "/CSS/reset.css";
-@import "/CSS/estilos.css";
+@import "/CSS/styles.css";
 
-/* Contenedor */
 .pagina{
-  min-height:100vh;
-  display:grid;
-  place-items:center;
-  position:relative;
-  padding:28px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10vh;
 }
 
-/* Formas decorativas de fondo */
 .fondo-decorativo{
   position:fixed;
   inset:0;
@@ -19,27 +15,25 @@
     linear-gradient(120deg, var(--fondo-stop-1) 0 30%, var(--fondo-stop-2) 30% 60%, var(--fondo-stop-3) 60% 100%),
     radial-gradient(1200px 400px at 10% 20%, var(--fondo-radial-1), transparent 30%),
     radial-gradient(900px 500px at 90% 80%, var(--fondo-radial-2), transparent 30%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 65% 0, 100% 20%, 100% 100%, 0% 100%);
 }
 
-/* Envoltura del registro */
-.envoltura-registrar{
+.envoltura-login{
   width:860px;
   max-width:100%;
   position:relative;
   z-index:2;
   display:flex;
   justify-content:center;
-  padding-top:28px;
+  padding-top:34px;
 }
 
-/* Logo tipo "píldora" solapado */
 .logo-pildora{
   position:absolute;
-  top:12px;
+  top:8px;
   left:50%;
   transform:translateX(-50%);
-  z-index:6;
+  z-index:5;
   background:var(--color-superficie);
   padding:6px 18px;
   border-radius:26px;
@@ -51,16 +45,16 @@
   align-items:center;
   justify-content:center;
 }
+
 .logo-pildora .meta{font-weight:400;color:var(--color-texto)}
 .logo-pildora .map{font-weight:800;color:var(--color-texto)}
 
-/* Tarjeta */
-.tarjeta-registrar{
+.tarjeta-login{
   background:var(--color-superficie);
-  width:760px;
-  max-width:calc(100% - 80px);
+  width:550px;
+  max-width:calc(100% - 120px);
   border-radius:26px;
-  padding:36px 56px 48px;
+  padding:42px 56px 36px;
   box-shadow: 0 18px 38px var(--sombra-fuerte);
   border:1px solid rgba(0,0,0,0.06);
   display:flex;
@@ -70,16 +64,14 @@
   position:relative;
 }
 
-/* Título */
-.titulo-registrar{
-  font-size:18px;
+.titulo-login{
+  font-size:14px;
   color:var(--color-texto);
   font-weight:600;
-  margin-top:6px;
+  margin-top:10px;
   align-self:center;
 }
 
-/* Campos */
 .campo{
   width:100%;
   display:flex;
@@ -93,74 +85,74 @@
   font-weight:500;
 }
 
-/* Inputs tipo "píldora" con borde azul */
 .campo input{
-  height:40px;
-  border-radius:22px;
-  padding:10px 18px;
+  height:38px;
+  border-radius:20px;
+  padding:10px 16px;
   font-size:15px;
   border:2px solid var(--color-principal);
   outline:none;
   transition:box-shadow .15s, transform .08s;
 }
 .campo input::placeholder{color:transparent}
+
 .campo input:focus{
-  box-shadow:0 8px 24px var(--sombra-suave);
+  box-shadow:0 6px 18px var(--sombra-suave);
   transform:translateY(-1px);
 }
 
-/* Acciones */
 .acciones{
   width:100%;
   display:flex;
   justify-content:center;
-  gap:12px;
   margin-top:10px;
 }
-
-/* Botones */
 .boton{
   display:inline-block;
   text-decoration:none;
-  padding:8px 20px;
+  padding:8px 26px;
   border-radius:18px;
   font-weight:600;
   font-size:15px;
-  min-width:220px;
+  min-width:160px;
   text-align:center;
   cursor:pointer;
   border:0;
 }
 
-/* Botón datos opcionales - primario largo */
-.boton-opcional{
+.boton.primario{
   background:linear-gradient(180deg,var(--color-principal),var(--color-principal-700));
   color:var(--color-texto-inverse);
   box-shadow:0 6px 18px rgba(42,41,110,0.28);
   border:1px solid rgba(255,255,255,0.06);
-  min-width:320px;
 }
 
-/* Botón registrarse - primario pequeño */
-.boton-registrar{
+.boton.secundario{
   background:linear-gradient(180deg,var(--color-principal),var(--color-principal-700));
   color:var(--color-texto-inverse);
-  box-shadow:0 6px 18px rgba(42,41,110,0.28);
+  box-shadow:0 6px 18px rgba(42,41,110,0.2);
   border:1px solid rgba(0,0,0,0.06);
-  min-width:160px;
+  min-width:200px;
 }
 
-/* Responsive */
-@media (max-width:820px){
-  .tarjeta-registrar{padding:28px;border-radius:20px}
-  .logo-pildora{top:8px;padding:6px 14px}
-  .boton-opcional{min-width:260px}
-  .boton-registrar{min-width:140px}
-  .envoltura-registrar{padding-top:22px}
+.ayuda{
+  font-size:14px;
+  color:var(--color-principal);
+  text-align:center;
+  width:100%;
+  margin-top:6px;
+}
+
+@media (max-width:1100px){
+  .tarjeta-login{padding:28px 28px;border-radius:20px}
+  .logo-pildora{top:6px;padding:6px 14px}
+  .boton.primario,.boton.secundario{min-width:140px}
+  .envoltura-login{padding-top:22px; width:90%;}
+  .fondo-decorativo{opacity:0.95}
+  .titulo-login{font-size:30px;}
 }
 @media (max-width:480px){
-  .tarjeta-registrar{width:92%;padding:22px}
+  .tarjeta-login{width:92%;padding:22px;max-width: calc(100% - 60px);}
   .logo-pildora{font-size:18px}
-  .campo input{height:44px}
-  .boton-opcional{min-width:160px}
+  .campo input{height:40px}
 }

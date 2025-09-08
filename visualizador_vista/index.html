@@ -19,10 +19,14 @@
 
       <nav class="nav-principal" role="navigation" aria-label="Menú principal">
         <ul>
-          <li><a href="#">Centro de Ayuda</a></li>
-          <li><a href="#">Hechos</a></li>
-          <li><a href="#">Colecciones</a></li>
-          <li><a class="btn-iniciar" href="iniciar_sesion.html">Iniciar Sesión</a></li>
+          <li class="nav-con-iconos"><a href="#" title="Centro de Ayuda"><i class="icon fas fa-question-circle"></i></a></li>
+          <li class="nav-con-iconos"><a href="#" title="Hechos"><i class="icon fas fa-book"></i></a></li>
+          <li class="nav-con-iconos"><a href="#" title="Colecciones"><i class="icon fas fa-th-large"></i></a></li>
+          <li class="nav-con-iconos"><a class="btn-iniciar" href="iniciar_sesion.html" title="Iniciar Sesión"><i class="icon fas fa-user"></i></a></li>
+          <li class="nav-con-texto"><a href="#">Centro de Ayuda</a></li>
+          <li class="nav-con-texto"><a href="#">Hechos</a></li>
+          <li class="nav-con-texto"><a href="#">Colecciones</a></li>
+          <li class="nav-con-texto"><a class="btn-iniciar" href="iniciar_sesion.html">Iniciar Sesión</a></li>
         </ul>
       </nav>
     </div>
@@ -174,25 +178,5 @@
     </div>
   </footer>
 
-  <script>
-    (function() {
-      const wrap = document.querySelector('.envoltura-tarjetas');
-      const tarjetas = document.getElementById('tarjetas');
-      const btnLeft = document.querySelector('.flecha-carousel.izquierda');
-      const btnRight = document.querySelector('.flecha-carousel.derecha');
-
-      const scrollAmount = Math.round(tarjetas.offsetWidth / 4);
-
-      btnLeft.addEventListener('click', () => {
-        tarjetas.scrollBy({left: -scrollAmount, behavior: 'smooth'});
-      });
-      btnRight.addEventListener('click', () => {
-        tarjetas.scrollBy({left: scrollAmount, behavior: 'smooth'});
-      });
-
-      btnLeft.addEventListener('keyup', (e) => { if (e.key === 'Enter' || e.key === ' ') btnLeft.click(); });
-      btnRight.addEventListener('keyup', (e) => { if (e.key === 'Enter' || e.key === ' ') btnRight.click(); });
-    })();
-  </script>
 </body>
 </html>

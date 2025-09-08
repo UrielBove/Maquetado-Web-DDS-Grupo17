@@ -1,13 +1,18 @@
 @import "/CSS/reset.css";
-@import "/CSS/estilos.css";
+@import "/CSS/styles.css";
 
 body {
   background-color: var(--color-superficie);
 }
 
+.icon {
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
 .contenedor{
   width:1100px;
-  max-width: calc(100% - 40px);
+  max-width: calc(100% - 20px);
   margin:0 auto;
 }
 
@@ -20,7 +25,8 @@ body {
 .encabezado-interior{
   display:flex;
   align-items:center;
-  justify-content:space-between;
+  justify-content: space-between;
+  gap: 20vw;
 }
 .caja-marca{
   display:inline-block;
@@ -64,7 +70,7 @@ body {
 .portada-interior{
   display:flex;
   align-items:flex-start;
-  justify-content:space-between;
+  flex-direction: column;
 }
 .portada h1{
   font-weight:300;
@@ -221,17 +227,38 @@ body {
 .grid-pie a{color:rgba(255,255,255,0.86);text-decoration:none;font-size:0.9rem}
 .pie-inferior{text-align:left;color:rgba(255,255,255,0.6);font-size:0.85rem;padding-top:10px}
 
+.nav-con-iconos{display:none}
+
 @media (max-width:1200px){
-  .contenedor{max-width:1000px}
+  .contenedor{max-width:900px}
 }
 @media (max-width:900px){
   .portada h1{font-size:32px}
   .tarjetas{gap:14px}
+  .nav-con-iconos{display: flex}
+  .nav-con-texto{display: none}
+  .contenedor{max-width:500px}
+
 }
 @media (max-width:700px){
-  .encabezado-interior{flex-direction:column;align-items:flex-start;gap:12px}
-  .nav-principal ul{flex-wrap:wrap;gap:10px}
+  .encabezado-interior{flex-direction:row;align-items:center}
   .tarjetas{padding:6px}
   .tarjetas .tarjeta{min-width:200px;width:210px}
   .grid-pie{grid-template-columns:1fr}
+  .nav-con-iconos{display: flex}
+  .nav-con-texto{display: none}
+  .contenedor{max-width:500px}
+}
+
+@media (max-width:500px){
+  .encabezado-interior{flex-direction:row;align-items:center;gap:10px}
+  .tarjetas{padding:6px}
+  .tarjetas .tarjeta{min-width:200px;width:210px}
+  .grid-pie{grid-template-columns:1fr}
+  .nav-con-iconos{display: flex}
+  .nav-con-texto{display: none}
+  .contenedor{max-width:400px}
+}
+@media (max-width:440px){
+  .contenedor{max-width:300px}
 }
