@@ -1,158 +1,210 @@
 @import "/CSS/reset.css";
 @import "/CSS/styles.css";
 
-.pagina{
+.pagina {
   display: flex;
   justify-content: center;
   padding-top: 10vh;
 }
 
-.fondo-decorativo{
-  position:fixed;
-  inset:0;
-  z-index:0;
-  background:
-    linear-gradient(120deg, var(--fondo-stop-1) 0 30%, var(--fondo-stop-2) 30% 60%, var(--fondo-stop-3) 60% 100%),
-    radial-gradient(1200px 400px at 10% 20%, var(--fondo-radial-1), transparent 30%),
-    radial-gradient(900px 500px at 90% 80%, var(--fondo-radial-2), transparent 30%);
+.fondo-decorativo {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(
+      120deg,
+      var(--fondo-stop-1) 0 30%,
+      var(--fondo-stop-2) 30% 60%,
+      var(--fondo-stop-3) 60% 100%
+    ),
+    radial-gradient(
+      1200px 400px at 10% 20%,
+      var(--fondo-radial-1),
+      transparent 30%
+    ),
+    radial-gradient(
+      900px 500px at 90% 80%,
+      var(--fondo-radial-2),
+      transparent 30%
+    );
   clip-path: polygon(0 0, 65% 0, 100% 20%, 100% 100%, 0% 100%);
 }
 
-.envoltura-login{
-  width:860px;
-  max-width:100%;
-  position:relative;
-  z-index:2;
-  display:flex;
-  justify-content:center;
-  padding-top:34px;
+.envoltura-login {
+  width: 860px;
+  max-width: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding-top: 34px;
 }
 
-.logo-pildora{
-  position:absolute;
-  top:8px;
-  left:50%;
-  transform:translateX(-50%);
-  z-index:5;
-  background:var(--color-superficie);
-  padding:6px 18px;
-  border-radius:26px;
-  border:2px solid rgba(0,0,0,0.06);
-  box-shadow:0 6px 18px var(--overlay-negro-18);
-  font-size:22px;
-  display:flex;
-  gap:4px;
-  align-items:center;
-  justify-content:center;
+.logo-pildora {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  background: var(--color-superficie);
+  padding: 6px 18px;
+  border-radius: 26px;
+  border: 2px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 18px var(--overlay-negro-18);
+  font-size: 22px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
 }
 
-.logo-pildora .meta{font-weight:400;color:var(--color-texto)}
-.logo-pildora .map{font-weight:800;color:var(--color-texto)}
+.logo-pildora .meta {
+  font-weight: 400;
+  color: var(--color-texto);
+}
+.logo-pildora .map {
+  font-weight: 800;
+  color: var(--color-texto);
+}
 
-.tarjeta-login{
-  background:var(--color-superficie);
-  width:550px;
-  max-width:calc(100% - 120px);
-  border-radius:26px;
-  padding:42px 56px 36px;
+.tarjeta-login {
+  background: var(--color-superficie);
+  width: 550px;
+  max-width: calc(100% - 120px);
+  border-radius: 26px;
+  padding: 42px 56px 36px;
   box-shadow: 0 18px 38px var(--sombra-fuerte);
-  border:1px solid rgba(0,0,0,0.06);
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:18px;
-  position:relative;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  position: relative;
 }
 
-.titulo-login{
-  font-size:14px;
-  color:var(--color-texto);
-  font-weight:600;
-  margin-top:10px;
-  align-self:center;
+.titulo-login {
+  font-size: 14px;
+  color: var(--color-texto);
+  font-weight: 600;
+  margin-top: 10px;
+  align-self: center;
 }
 
-.campo{
-  width:100%;
-  display:flex;
-  flex-direction:column;
-  gap:8px;
-  margin-top:6px;
+.campo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 6px;
 }
-.campo label{
-  font-size:14px;
-  color:var(--color-texto);
-  font-weight:500;
-}
-
-.campo input{
-  height:38px;
-  border-radius:20px;
-  padding:10px 16px;
-  font-size:15px;
-  border:2px solid var(--color-principal);
-  outline:none;
-  transition:box-shadow .15s, transform .08s;
-}
-.campo input::placeholder{color:transparent}
-
-.campo input:focus{
-  box-shadow:0 6px 18px var(--sombra-suave);
-  transform:translateY(-1px);
+.campo label {
+  font-size: 14px;
+  color: var(--color-texto);
+  font-weight: 500;
 }
 
-.acciones{
-  width:100%;
-  display:flex;
-  justify-content:center;
-  margin-top:10px;
+.campo input {
+  height: 38px;
+  border-radius: 20px;
+  padding: 10px 16px;
+  font-size: 15px;
+  border: 2px solid var(--color-principal);
+  outline: none;
+  transition: box-shadow 0.15s, transform 0.08s;
 }
-.boton{
-  display:inline-block;
-  text-decoration:none;
-  padding:8px 26px;
-  border-radius:18px;
-  font-weight:600;
-  font-size:15px;
-  min-width:160px;
-  text-align:center;
-  cursor:pointer;
-  border:0;
+.campo input::placeholder {
+  color: transparent;
 }
 
-.boton.primario{
-  background:linear-gradient(180deg,var(--color-principal),var(--color-principal-700));
-  color:var(--color-texto-inverse);
-  box-shadow:0 6px 18px rgba(42,41,110,0.28);
-  border:1px solid rgba(255,255,255,0.06);
+.campo input:focus {
+  box-shadow: 0 6px 18px var(--sombra-suave);
+  transform: translateY(-1px);
 }
 
-.boton.secundario{
-  background:linear-gradient(180deg,var(--color-principal),var(--color-principal-700));
-  color:var(--color-texto-inverse);
-  box-shadow:0 6px 18px rgba(42,41,110,0.2);
-  border:1px solid rgba(0,0,0,0.06);
-  min-width:200px;
+.acciones {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.boton {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 26px;
+  border-radius: 18px;
+  font-weight: 600;
+  font-size: 15px;
+  min-width: 160px;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
 }
 
-.ayuda{
-  font-size:14px;
-  color:var(--color-principal);
-  text-align:center;
-  width:100%;
-  margin-top:6px;
+.boton.primario {
+  background: linear-gradient(
+    180deg,
+    var(--color-principal),
+    var(--color-principal-700)
+  );
+  color: var(--color-texto-inverse);
+  box-shadow: 0 6px 18px rgba(42, 41, 110, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-@media (max-width:1100px){
-  .tarjeta-login{padding:28px 28px;border-radius:20px}
-  .logo-pildora{top:6px;padding:6px 14px}
-  .boton.primario,.boton.secundario{min-width:140px}
-  .envoltura-login{padding-top:22px; width:90%;}
-  .fondo-decorativo{opacity:0.95}
-  .titulo-login{font-size:30px;}
+.boton.secundario {
+  background: linear-gradient(
+    180deg,
+    var(--color-principal),
+    var(--color-principal-700)
+  );
+  color: var(--color-texto-inverse);
+  box-shadow: 0 6px 18px rgba(42, 41, 110, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  min-width: 200px;
 }
-@media (max-width:480px){
-  .tarjeta-login{width:92%;padding:22px;max-width: calc(100% - 60px);}
-  .logo-pildora{font-size:18px}
-  .campo input{height:40px}
+
+.ayuda {
+  font-size: 14px;
+  color: var(--color-principal);
+  text-align: center;
+  width: 100%;
+  margin-top: 6px;
+}
+
+@media (max-width: 1100px) {
+  .tarjeta-login {
+    padding: 28px 28px;
+    border-radius: 20px;
+  }
+  .logo-pildora {
+    top: 6px;
+    padding: 6px 14px;
+  }
+  .boton.primario,
+  .boton.secundario {
+    min-width: 140px;
+  }
+  .envoltura-login {
+    padding-top: 22px;
+    width: 90%;
+  }
+  .fondo-decorativo {
+    opacity: 0.95;
+  }
+  .titulo-login {
+    font-size: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .tarjeta-login {
+    width: 92%;
+    padding: 22px;
+    max-width: calc(100% - 60px);
+  }
+  .logo-pildora {
+    font-size: 18px;
+  }
+  .campo input {
+    height: 40px;
+  }
 }

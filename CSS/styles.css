@@ -1,8 +1,13 @@
 /* colors.css - palette centralizada para MetaMap */
-:root{
+:root {
   /* Primarios / Brand */
   --color-principal: #2b2a76;
   --color-principal-700: #232260;
+
+  /* CTA / acciones */
+  --color-cta: #FF6B35;
+  --color-peligro: #C62828;
+  --color-texto-peligro: #ffffff;
 
   /* Navegación / fondos oscuros */
   --color-navegacion: #2b3b55;
@@ -25,20 +30,23 @@
   --color-tag-texto: #21324a;
 
   /* Fondo decorativo (stops para gradientes) */
-  --fondo-stop-1: rgba(58,52,74,0.95);
-  --fondo-stop-2: rgba(44,40,58,0.95);
-  --fondo-stop-3: rgba(62,56,80,0.95);
-  --fondo-radial-1: rgba(56,50,72,0.70);
-  --fondo-radial-2: rgba(40,36,50,0.60);
+  --fondo-stop-1: rgba(58, 52, 74, 0.95);
+  --fondo-stop-2: rgba(44, 40, 58, 0.95);
+  --fondo-stop-3: rgba(62, 56, 80, 0.95);
+  --fondo-radial-1: rgba(56, 50, 72, 0.7);
+  --fondo-radial-2: rgba(40, 36, 50, 0.6);
 
   /* Sombras y overlays */
-  --sombra-fuerte: rgba(11,9,20,0.35);
-  --sombra-suave: rgba(42,41,110,0.12);
-  --overlay-negro-10: rgba(0,0,0,0.10);
-  --overlay-negro-18: rgba(0,0,0,0.18);
+  --sombra-fuerte: rgba(11, 9, 20, 0.35);
+  --sombra-suave: rgba(42, 41, 110, 0.12);
+  --overlay-negro-10: rgba(0, 0, 0, 0.1);
+  --overlay-negro-18: rgba(0, 0, 0, 0.18);
 
   /* Utilities - variantes */
-  --principal-90: rgba(43,42,118,0.9);
-  --principal-70: rgba(43,42,118,0.7);
-  --principal-30: rgba(43,42,118,0.3);
+  --principal-90: rgba(43, 42, 118, 0.9);
+  --principal-70: rgba(43, 42, 118, 0.7);
+  --principal-30: rgba(43, 42, 118, 0.3);
+
+  /* Foco */
+  --foco: 3px solid rgba(43, 42, 118, 0.18);
 }

@@ -1,51 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MetaMap - Registrate</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>MetaMap - Registrate</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Merriweather:ital,wght@0,700;0,300&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Merriweather:ital,wght@0,700;0,300&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="registrar_styles.css">
-</head>
-<body>
-  <main class="pagina" role="main">
-    <div class="fondo-decorativo" aria-hidden="true"></div>
+    <link rel="stylesheet" href="registrar_styles.css" />
+  </head>
+  <body>
+    <main class="pagina" role="main">
+      <div class="fondo-decorativo" aria-hidden="true"></div>
 
-    <section class="envoltura-registrar" aria-labelledby="titulo-registrar">
-      <div class="logo-pildora" aria-hidden="true">
-        <span class="meta">Meta</span><span class="map">Map</span>
-      </div>
+      <section class="envoltura-registrar" aria-labelledby="titulo-registrar">
+        <div class="logo-pildora" aria-hidden="true">
+          <span class="meta">Meta</span><span class="map">Map</span>
+        </div>
 
-      <div class="tarjeta-registrar" role="form" aria-labelledby="titulo-registrar">
-        <form action="#" method="post" novalidate>
-          <div class="campo">
-            <label for="nombre">Nombre</label>
-            <input id="nombre" name="nombre" type="text" autocomplete="given-name" required aria-required="true" placeholder=" ">
-          </div>
+        <div
+          class="tarjeta-registrar"
+          role="form"
+          aria-labelledby="titulo-registrar"
+        >
+          <form action="#" method="post" novalidate>
+            <div class="campo">
+              <label for="nombre">Nombre</label>
+              <input
+                id="nombre"
+                name="nombre"
+                type="text"
+                autocomplete="given-name"
+                required
+                aria-required="true"
+                placeholder=" "
+              />
+            </div>
 
-          <div class="campo">
-            <label for="apellido">Apellido</label>
-            <input id="apellido" name="apellido" type="text" autocomplete="family-name" required aria-required="true" placeholder=" ">
-          </div>
+            <div class="campo">
+              <label for="apellido">Apellido</label>
+              <input
+                id="apellido"
+                name="apellido"
+                type="text"
+                autocomplete="family-name"
+                required
+                aria-required="true"
+                placeholder=" "
+              />
+            </div>
 
-          <div class="campo">
-            <label for="password">Contraseña</label>
-            <input id="password" name="password" type="password" autocomplete="new-password" required aria-required="true" placeholder=" ">
-          </div>
+            <div class="campo">
+              <label for="password">Contraseña</label>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                autocomplete="new-password"
+                required
+                aria-required="true"
+                placeholder=" "
+              />
+            </div>
 
-          <div class="acciones">
-            <button type="button" class="boton secundario" aria-haspopup="dialog">Completar Datos Opcionales</button>
-          </div>
+            <div class="acciones">
+              <button
+                type="button"
+                class="boton secundario"
+                aria-haspopup="dialog"
+              >
+                Completar Datos Opcionales
+              </button>
+            </div>
 
-          <div class="acciones">
-            <button type="submit" class="boton primario">Registrarse</button>
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
-</body>
+            <div class="acciones">
+              <button type="submit" class="boton primario">Registrarse</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

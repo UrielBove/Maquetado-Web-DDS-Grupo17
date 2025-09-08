@@ -1,48 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MetaMap - Iniciar sesión</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>MetaMap - Iniciar sesión</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Merriweather:ital,wght@0,700;0,300&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Merriweather:ital,wght@0,700;0,300&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="iniciar_sesion.css">
-</head>
-<body>
-  <main class="pagina" role="main">
-    <div class="fondo-decorativo" aria-hidden="true"></div>
+    <link rel="stylesheet" href="iniciar_sesion_styles.css" />
+  </head>
+  <body>
+    <main class="pagina" role="main">
+      <div class="fondo-decorativo" aria-hidden="true"></div>
 
-    <section class="envoltura-login" aria-labelledby="titulo-login">
-      <div class="logo-pildora" aria-hidden="true">
-        <span class="meta">Meta</span><span class="map">Map</span>
-      </div>
+      <section class="envoltura-login" aria-labelledby="titulo-login">
+        <div class="logo-pildora" aria-hidden="true">
+          <span class="meta">Meta</span><span class="map">Map</span>
+        </div>
 
-      <div class="tarjeta-login" role="form" aria-labelledby="titulo-login">
-        <form action="#" method="post" novalidate>
-          <div class="campo">
-            <label for="usuario">Email/Usuario</label>
-            <input id="usuario" name="usuario" type="text" inputmode="email" autocomplete="username" required aria-required="true" placeholder=" ">
-          </div>
+        <div class="tarjeta-login" role="form" aria-labelledby="titulo-login">
+          <form action="#" method="post" novalidate>
+            <div class="campo">
+              <label for="usuario">Email/Usuario</label>
+              <input
+                id="usuario"
+                name="usuario"
+                type="text"
+                inputmode="email"
+                autocomplete="username"
+                required
+                aria-required="true"
+                placeholder=" "
+              />
+            </div>
 
-          <div class="campo">
-            <label for="contrasena">Contraseña</label>
-            <input id="contrasena" name="contrasena" type="password" autocomplete="current-password" required aria-required="true" placeholder=" ">
-          </div>
+            <div class="campo">
+              <label for="contrasena">Contraseña</label>
+              <input
+                id="contrasena"
+                name="contrasena"
+                type="password"
+                autocomplete="current-password"
+                required
+                aria-required="true"
+                placeholder=" "
+              />
+            </div>
 
-          <div class="acciones">
-            <button type="submit" class="boton primario">Iniciar sesión</button>
-          </div>
+            <div class="acciones">
+              <button type="submit" class="boton primario">
+                Iniciar sesión
+              </button>
+            </div>
 
-          <p class="ayuda">¿No estás registrado?</p>
+            <p class="ayuda">¿No estás registrado?</p>
 
-          <div class="acciones">
-            <a class="boton secundario" href="registrar.html" role="button">Registrarse</a>
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
-</body>
+            <div class="acciones">
+              <a class="boton secundario" href="registrar.html" role="button"
+                >Registrarse</a
+              >
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

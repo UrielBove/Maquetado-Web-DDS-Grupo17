@@ -325,7 +325,11 @@ body {
 .separador {
   border: none;
   height: 1px;
-  background: linear-gradient(90deg, var(--overlay-negro-18), var(--overlay-negro-10));
+  background: linear-gradient(
+    90deg,
+    var(--overlay-negro-18),
+    var(--overlay-negro-10)
+  );
   margin: 26px 0 60px 0;
 }
 
@@ -344,7 +348,6 @@ body {
 .tarjeta.tarjeta-coleccion .meta-dos strong {
   font-weight: 600;
 }
-
 
 .pie-sitio {
   background: var(--color-pie);
@@ -449,7 +452,6 @@ body {
     width: 210px;
     min-width: 200px;
   }
-
 }
 
 @media (max-width: 500px) {
