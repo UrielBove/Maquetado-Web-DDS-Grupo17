@@ -170,6 +170,10 @@ body {
   font-size: 0.95rem;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .nav-principal ul {
   list-style: none;
   padding: 0;
@@ -271,6 +275,7 @@ body {
 .tarjeta {
   background: var(--color-superficie);
   min-width: 220px;
+  min-height: 100%;
   width: 250px;
   border: 1px solid var(--color-borde);
   border-radius: 10px;

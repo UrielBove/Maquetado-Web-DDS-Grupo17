@@ -166,6 +166,10 @@ body {
   font-size: 0.95rem;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .nav-principal ul {
   list-style: none;
   padding: 0;

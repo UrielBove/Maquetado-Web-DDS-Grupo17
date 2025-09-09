@@ -20,54 +20,43 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <header class="encabezado-sitio" role="banner">
-      <div class="contenedor encabezado-interior">
-        <a class="marca" href="#" aria-label="MetaMap Home">
-          <span class="caja-marca">MetaMap</span>
-        </a>
+  <header class="encabezado-sitio" role="banner">
+    <div class="contenedor encabezado-interior">
+      <a class="marca pointer" href="index.html" aria-label="MetaMap Home">
+        <span class="caja-marca">MetaMap</span>
+      </a>
 
-        <nav
-          class="nav-principal"
-          role="navigation"
-          aria-label="Menú principal"
-        >
-          <ul>
-            <li class="nav-con-iconos">
-              <a href="#" title="Centro de Ayuda"
-                ><i class="icon fas fa-question-circle"></i
-              ></a>
-            </li>
-            <li class="nav-con-iconos">
-              <a href="#" title="Hechos"><i class="icon fas fa-book"></i></a>
-            </li>
-            <li class="nav-con-iconos">
-              <a href="#" title="Colecciones"
-                ><i class="icon fas fa-th-large"></i
-              ></a>
-            </li>
-            <li class="nav-con-texto"><a href="index.html">Pagina principal</a></li>
-            <li class="nav-con-texto"><a href="#">Hechos</a></li>
-            <li class="nav-con-texto"><a href="#">Colecciones</a></li>
-            <li class="profile-icon" id="profileBtn">
-              <i class="fa-solid fa-user"></i>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+      <nav class="nav-principal" role="navigation" aria-label="Menú principal">
+        <ul>
+          <li class="nav-con-iconos">
+            <a href="#" title="Hechos"><i class="icon fas fa-book"></i></a>
+          </li>
+          <li class="nav-con-iconos">
+            <a href="#" title="Colecciones"><i class="icon fas fa-th-large"></i></a>
+          </li>
+          <li class="nav-con-texto"><a href="#">Hechos</a></li>
+          <li class="nav-con-texto"><a href="#">Colecciones</a></li>
+          <li class="profile-icon" id="profileBtn">
+            <i class="fa-solid fa-user"></i>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section class="portada" aria-labelledby="sobre-nosotros">
-      <div class="contenedor portada-interior">
-        <h1 id="sobre-nosotros">Sobre Nosotros...</h1>
 
-        <div class="puntos-carousel" aria-hidden="true">
-          <span class="punto activo"></span>
-          <span class="punto"></span>
-          <span class="punto"></span>
-          <span class="punto"></span>
-        </div>
-      </div>
-    </section>
+  <section class="portada" aria-labelledby="sobre-nosotros">
+    <div class="contenedor portada-interior">
+      <h1 id="sobre-nosotros">Sobre Nosotros...</h1>
+      <p class="descripcion">
+        MetaMapa es un sistema de código abierto desarrollado por una ONG para recopilar, visibilizar y mapear
+        información multimedia georreferenciada y temporal; permite a ONGs, universidades y organismos desplegar
+        instancias propias, combinar fuentes estáticas con aportes colaborativos, almacenar datos de forma
+        descentralizada y usar herramientas de etiquetado para facilitar la verificación, priorizando la privacidad (no
+        rastreamos a quienes consultan) y la protección de los informantes.
+      </p>
+    </div>
+  </section>
 
     <main>
       <section class="colecciones noticias" aria-labelledby="titulo-noticias">

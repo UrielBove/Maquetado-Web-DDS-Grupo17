@@ -1,104 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>MetaMap - Sobre Nosotros</title>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Merriweather:wght@300;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MetaMap - Sobre Nosotros</title>
 
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <header class="encabezado-sitio" role="banner">
-      <div class="contenedor encabezado-interior">
-        <a class="marca" href="#" aria-label="MetaMap Home">
-          <span class="caja-marca">MetaMap</span>
-        </a>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Merriweather:wght@300;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-        <nav
-          class="nav-principal"
-          role="navigation"
-          aria-label="Menú principal"
-        >
-          <ul>
-            <li class="nav-con-iconos">
-              <a href="#" title="Centro de Ayuda"
-                ><i class="icon fas fa-question-circle"></i
-              ></a>
-            </li>
-            <li class="nav-con-iconos">
-              <a href="#" title="Hechos"><i class="icon fas fa-book"></i></a>
-            </li>
-            <li class="nav-con-iconos">
-              <a href="#" title="Colecciones"
-                ><i class="icon fas fa-th-large"></i
-              ></a>
-            </li>
-            <li class="nav-con-texto"><a href="index.html">Pagina principal</a></li>
-            <li class="nav-con-texto"><a href="#">Hechos</a></li>
-            <li class="nav-con-texto"><a href="#">Colecciones</a></li>
-            <li class="profile-icon" id="profileBtn">
-              <i class="fa-solid fa-user"></i>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
 
-    <section class="portada" aria-labelledby="sobre-nosotros">
-      <div class="contenedor portada-interior">
-        <h1 id="sobre-nosotros">Sobre Nosotros...</h1>
+<body>
+  <header class="encabezado-sitio" role="banner">
+    <div class="contenedor encabezado-interior">
+      <a class="marca pointer" href="index.html" aria-label="MetaMap Home">
+        <span class="caja-marca">MetaMap</span>
+      </a>
 
-        <div class="puntos-carousel" aria-hidden="true">
-          <span class="punto activo"></span>
-          <span class="punto"></span>
-          <span class="punto"></span>
-          <span class="punto"></span>
-        </div>
-      </div>
-    </section>
+      <nav class="nav-principal" role="navigation" aria-label="Menú principal">
+        <ul>
+          <li class="nav-con-iconos">
+            <a href="#" title="Hechos"><i class="icon fas fa-book"></i></a>
+          </li>
+          <li class="nav-con-iconos">
+            <a href="#" title="Colecciones"><i class="icon fas fa-th-large"></i></a>
+          </li>
+          <li class="nav-con-texto"><a href="#">Hechos</a></li>
+          <li class="nav-con-texto"><a href="#">Colecciones</a></li>
+          <li class="profile-icon" id="profileBtn">
+            <i class="fa-solid fa-user"></i>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-      <section class="colecciones noticias" aria-labelledby="titulo-noticias">
-        <div class="contenedor">
-          <h2 id="titulo-noticias">Hechos Destacados</h2>
+  <section class="portada" aria-labelledby="sobre-nosotros">
+    <div class="contenedor portada-interior">
+      <h1 id="sobre-nosotros">Sobre Nosotros...</h1>
+      <p class="descripcion">
+        MetaMapa es un sistema de código abierto desarrollado por una ONG para recopilar, visibilizar y mapear
+        información multimedia georreferenciada y temporal; permite a ONGs, universidades y organismos desplegar
+        instancias propias, combinar fuentes estáticas con aportes colaborativos, almacenar datos de forma
+        descentralizada y usar herramientas de etiquetado para facilitar la verificación, priorizando la privacidad (no
+        rastreamos a quienes consultan) y la protección de los informantes.
+      </p>
+    </div>
+  </section>
 
-          <div class="envoltura-tarjetas" aria-label="Noticias destacadas">
-            <button class="flecha-carousel izquierda" aria-label="Anterior">
-              <i class="fa-solid fa-circle-chevron-left"></i>
-            </button>
+  <main>
+    <section class="colecciones noticias" aria-labelledby="titulo-noticias">
+      <div class="contenedor">
+        <h2 id="titulo-noticias">Hechos Destacados</h2>
 
-            <div class="tarjetas" id="tarjetas">
-              <a href="visualizar_hecho.html">
-                <article
-                class="tarjeta"
-                itemscope
-                itemtype="http://schema.org/NewsArticle"
-                aria-labelledby="t1"
-              >
-                <img
-                  src="https://picsum.photos/seed/n1/400/260"
-                  alt="Acuerdo económico"
-                  loading="lazy"
-                  itemprop="image"
-                />
+        <div class="envoltura-tarjetas" aria-label="Noticias destacadas">
+          <button class="flecha-carousel izquierda" aria-label="Anterior">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+          </button>
+
+          <div class="tarjetas" id="tarjetas">
+            <a href="visualizar_hecho.html">
+              <article class="tarjeta" itemscope itemtype="http://schema.org/NewsArticle" aria-labelledby="t1">
+                <img src="https://picsum.photos/seed/n1/400/260" alt="Acuerdo económico" loading="lazy"
+                  itemprop="image" />
                 <div class="cuerpo-tarjeta">
                   <p class="meta">
-                    <span class="categoria" itemprop="articleSection"
-                      >Economía</span
-                    >
-                    <time datetime="2025-09-03" itemprop="datePublished"
-                      >03/09/2025</time
-                    >
+                    <span class="categoria" itemprop="articleSection">Economía</span>
+                    <time datetime="2025-09-03" itemprop="datePublished">03/09/2025</time>
                   </p>
                   <h3 id="t1" itemprop="headline">
                     Nuevo acuerdo económico en la región
@@ -113,34 +86,20 @@
                     <span class="lugar">Buenos Aires, Argentina</span>
                   </p>
                   <div class="etiquetas">
-                    <span>#Comercio</span><span>#Acuerdo</span
-                    ><span>#LatAm</span>
+                    <span>#Comercio</span><span>#Acuerdo</span><span>#LatAm</span>
                   </div>
                 </div>
               </article>
-              </a>
+            </a>
 
-              <a href="visualizar_hecho.html">
-                <article
-                class="tarjeta"
-                itemscope
-                itemtype="http://schema.org/NewsArticle"
-                aria-labelledby="t2"
-              >
-                <img
-                  src="https://picsum.photos/seed/n2/400/260"
-                  alt="Medicina genética"
-                  loading="lazy"
-                  itemprop="image"
-                />
+            <a href="visualizar_hecho.html">
+              <article class="tarjeta" itemscope itemtype="http://schema.org/NewsArticle" aria-labelledby="t2">
+                <img src="https://picsum.photos/seed/n2/400/260" alt="Medicina genética" loading="lazy"
+                  itemprop="image" />
                 <div class="cuerpo-tarjeta">
                   <p class="meta">
-                    <span class="categoria" itemprop="articleSection"
-                      >Ciencia</span
-                    >
-                    <time datetime="2025-09-01" itemprop="datePublished"
-                      >01/09/2025</time
-                    >
+                    <span class="categoria" itemprop="articleSection">Ciencia</span>
+                    <time datetime="2025-09-01" itemprop="datePublished">01/09/2025</time>
                   </p>
                   <h3 id="t2" itemprop="headline">
                     Avances científicos en medicina genética
@@ -159,29 +118,15 @@
                   </div>
                 </div>
               </article>
-              </a>
+            </a>
 
-              <a href="visualizar_hecho.html">
-                <article
-                class="tarjeta"
-                itemscope
-                itemtype="http://schema.org/NewsArticle"
-                aria-labelledby="t3"
-              >
-                <img
-                  src="https://picsum.photos/seed/n3/400/260"
-                  alt="Elecciones"
-                  loading="lazy"
-                  itemprop="image"
-                />
+            <a href="visualizar_hecho.html">
+              <article class="tarjeta" itemscope itemtype="http://schema.org/NewsArticle" aria-labelledby="t3">
+                <img src="https://picsum.photos/seed/n3/400/260" alt="Elecciones" loading="lazy" itemprop="image" />
                 <div class="cuerpo-tarjeta">
                   <p class="meta">
-                    <span class="categoria" itemprop="articleSection"
-                      >Política</span
-                    >
-                    <time datetime="2025-09-05" itemprop="datePublished"
-                      >05/09/2025</time
-                    >
+                    <span class="categoria" itemprop="articleSection">Política</span>
+                    <time datetime="2025-09-05" itemprop="datePublished">05/09/2025</time>
                   </p>
                   <h3 id="t3" itemprop="headline">
                     Elecciones presidenciales en marcha
@@ -200,29 +145,16 @@
                   </div>
                 </div>
               </article>
-              </a>
+            </a>
 
-              <a href="visualizar_hecho.html">
-                <article
-                class="tarjeta"
-                itemscope
-                itemtype="http://schema.org/NewsArticle"
-                aria-labelledby="t4"
-              >
-                <img
-                  src="https://picsum.photos/seed/n4/400/260"
-                  alt="Juegos Olímpicos"
-                  loading="lazy"
-                  itemprop="image"
-                />
+            <a href="visualizar_hecho.html">
+              <article class="tarjeta" itemscope itemtype="http://schema.org/NewsArticle" aria-labelledby="t4">
+                <img src="https://picsum.photos/seed/n4/400/260" alt="Juegos Olímpicos" loading="lazy"
+                  itemprop="image" />
                 <div class="cuerpo-tarjeta">
                   <p class="meta">
-                    <span class="categoria" itemprop="articleSection"
-                      >Deportes</span
-                    >
-                    <time datetime="2025-09-02" itemprop="datePublished"
-                      >02/09/2025</time
-                    >
+                    <span class="categoria" itemprop="articleSection">Deportes</span>
+                    <time datetime="2025-09-02" itemprop="datePublished">02/09/2025</time>
                   </p>
                   <h3 id="t4" itemprop="headline">
                     Récord histórico en los Juegos Olímpicos
@@ -237,188 +169,165 @@
                     <span class="lugar">Tokio, Japón</span>
                   </p>
                   <div class="etiquetas">
-                    <span>#Olimpiadas</span><span>#Récord</span
-                    ><span>#Atletismo</span>
+                    <span>#Olimpiadas</span><span>#Récord</span><span>#Atletismo</span>
                   </div>
                 </div>
               </article>
-              </a>
-            </div>
-
-            <button class="flecha-carousel derecha" aria-label="Siguiente">
-              <i class="fa-solid fa-circle-chevron-right"></i>
-            </button>
+            </a>
           </div>
 
-          <hr class="separador" aria-hidden="true" />
-
-          <h2 id="titulo-colecciones">Colecciones Destacadas</h2>
-
-          <div
-            class="envoltura-tarjetas colecciones"
-            aria-label="Colecciones destacadas"
-          >
-            <button
-              class="flecha-carousel izquierda colecciones-izquierda"
-              aria-label="Anterior colecciones"
-            >
-              <i class="fa-solid fa-circle-chevron-left"></i>
-            </button>
-
-            <div class="tarjetas" id="tarjetas-colecciones">
-              <article class="tarjeta tarjeta-coleccion" aria-labelledby="c1">
-                <img
-                  src="https://picsum.photos/seed/c1/400/260"
-                  alt="Coalición económica"
-                  loading="lazy"
-                />
-                <div class="cuerpo-tarjeta">
-                  <p class="meta">
-                    <span class="categoria">Economía</span>
-                  </p>
-                  <h3 id="c1">Colección: Integración Comercial Regional</h3>
-                  <p class="descripcion">
-                    Agrupa hechos sobre acuerdos comerciales, tratados y
-                    decisiones arancelarias que afectan a la región.
-                  </p>
-                  <p class="meta-dos">
-                    <strong>Fuentes:</strong> 6 · <strong>Hechos:</strong> 18
-                  </p>
-                </div>
-              </article>
-
-              <article class="tarjeta tarjeta-coleccion" aria-labelledby="c2">
-                <img
-                  src="https://picsum.photos/seed/c2/400/260"
-                  alt="Salud pública"
-                  loading="lazy"
-                />
-                <div class="cuerpo-tarjeta">
-                  <p class="meta">
-                    <span class="categoria">Salud</span>
-                  </p>
-                  <h3 id="c2">Colección: Avances en Medicina Genética</h3>
-                  <p class="descripcion">
-                    Recopila investigaciones, anuncios regulatorios y pruebas
-                    clínicas relevantes al terreno de la genética.
-                  </p>
-                  <p class="meta-dos">
-                    <strong>Fuentes:</strong> 4 · <strong>Hechos:</strong> 9
-                  </p>
-                </div>
-              </article>
-
-              <article class="tarjeta tarjeta-coleccion" aria-labelledby="c3">
-                <img
-                  src="https://picsum.photos/seed/c3/400/260"
-                  alt="Deportes destacados"
-                  loading="lazy"
-                />
-                <div class="cuerpo-tarjeta">
-                  <p class="meta">
-                    <span class="categoria">Deportes</span>
-                  </p>
-                  <h3 id="c3">Colección: Récords y Eventos Deportivos</h3>
-                  <p class="descripcion">
-                    Hechos relacionados a eventos internacionales, marcas
-                    históricas y noticias de atletas.
-                  </p>
-                  <p class="meta-dos">
-                    <strong>Fuentes:</strong> 8 · <strong>Hechos:</strong> 21
-                  </p>
-                </div>
-              </article>
-
-              <article class="tarjeta tarjeta-coleccion" aria-labelledby="c4">
-                <img
-                  src="https://picsum.photos/seed/c4/400/260"
-                  alt="Inteligencia artificial"
-                  loading="lazy"
-                />
-                <div class="cuerpo-tarjeta">
-                  <p class="meta">
-                    <span class="categoria">Tecnología</span>
-                  </p>
-                  <h3 id="c4">
-                    Colección: Inteligencia Artificial y Regulación
-                  </h3>
-                  <p class="descripcion">
-                    Reúne hechos sobre políticas, marcos regulatorios,
-                    normativas y debates públicos alrededor de la IA.
-                  </p>
-                  <p class="meta-dos">
-                    <strong>Fuentes:</strong> 12 · <strong>Hechos:</strong> 34
-                  </p>
-                </div>
-              </article>
-            </div>
-
-            <button
-              class="flecha-carousel derecha colecciones-derecha"
-              aria-label="Siguiente colecciones"
-            >
-              <i class="fa-solid fa-circle-chevron-right"></i>
-            </button>
-          </div>
-        </div>
-      </section>
-    </main>
-
-        <div class="sidebar" id="sidebar">
-          <div class="sidebar-header">
-             <h3>Username</h3>
-             <p>Contribuyente</p>
-           </div>      
-
-            <ul class="sidebar-menu">
-              <a href="misHechos.html"><li><i class="fas fa-check-circle"></i><span>Mis Hechos</span></li></a>
-              <li><i class="fas fa-user-cog"></i><span>Mi Cuenta</span></li>
-            </ul>
-
-            <div class="circle-btn">+</div>
-          </div>
-        <div class="overlay" id="overlay"></div>
-
-    <footer class="pie-sitio" role="contentinfo">
-      <div class="contenedor pie-interior">
-        <div class="pie-superior">
-          <div class="marca-pie">
-            <span class="caja-marca small">MetaMap</span>
-          </div>
-
-          <div class="redes" aria-hidden="true">
-            <i class="icon fa-brands fa-facebook-f"></i>
-            <i class="icon fa-brands fa-linkedin-in"></i>
-            <i class="icon fa-brands fa-youtube"></i>
-            <i class="icon fa-brands fa-twitter"></i>
-            <i class="icon fa-brands fa-instagram"></i>
-          </div>
+          <button class="flecha-carousel derecha" aria-label="Siguiente">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+          </button>
         </div>
 
-        <div class="grid-pie">
-          <div>
-            <h4>NOSOTROS</h4>
-            <ul>
-              <li><a href="#">Nuestro Equipo</a></li>
-              <li><a href="#">Preguntas Frecuentes</a></li>
-            </ul>
+        <hr class="separador" aria-hidden="true" />
+
+        <h2 id="titulo-colecciones">Colecciones Destacadas</h2>
+
+        <div class="envoltura-tarjetas colecciones" aria-label="Colecciones destacadas">
+          <button class="flecha-carousel izquierda colecciones-izquierda" aria-label="Anterior colecciones">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+          </button>
+
+          <div class="tarjetas" id="tarjetas-colecciones">
+            <article class="tarjeta tarjeta-coleccion" aria-labelledby="c1">
+              <img src="https://picsum.photos/seed/c1/400/260" alt="Coalición económica" loading="lazy" />
+              <div class="cuerpo-tarjeta">
+                <p class="meta">
+                  <span class="categoria">Economía</span>
+                </p>
+                <h3 id="c1">Colección: Integración Comercial Regional</h3>
+                <p class="descripcion">
+                  Agrupa hechos sobre acuerdos comerciales, tratados y
+                  decisiones arancelarias que afectan a la región.
+                </p>
+                <p class="meta-dos">
+                  <strong>Fuentes:</strong> 6 · <strong>Hechos:</strong> 18
+                </p>
+              </div>
+            </article>
+
+            <article class="tarjeta tarjeta-coleccion" aria-labelledby="c2">
+              <img src="https://picsum.photos/seed/c2/400/260" alt="Salud pública" loading="lazy" />
+              <div class="cuerpo-tarjeta">
+                <p class="meta">
+                  <span class="categoria">Salud</span>
+                </p>
+                <h3 id="c2">Colección: Avances en Medicina Genética</h3>
+                <p class="descripcion">
+                  Recopila investigaciones, anuncios regulatorios y pruebas
+                  clínicas relevantes al terreno de la genética.
+                </p>
+                <p class="meta-dos">
+                  <strong>Fuentes:</strong> 4 · <strong>Hechos:</strong> 9
+                </p>
+              </div>
+            </article>
+
+            <article class="tarjeta tarjeta-coleccion" aria-labelledby="c3">
+              <img src="https://picsum.photos/seed/c3/400/260" alt="Deportes destacados" loading="lazy" />
+              <div class="cuerpo-tarjeta">
+                <p class="meta">
+                  <span class="categoria">Deportes</span>
+                </p>
+                <h3 id="c3">Colección: Récords y Eventos Deportivos</h3>
+                <p class="descripcion">
+                  Hechos relacionados a eventos internacionales, marcas
+                  históricas y noticias de atletas.
+                </p>
+                <p class="meta-dos">
+                  <strong>Fuentes:</strong> 8 · <strong>Hechos:</strong> 21
+                </p>
+              </div>
+            </article>
+
+            <article class="tarjeta tarjeta-coleccion" aria-labelledby="c4">
+              <img src="https://picsum.photos/seed/c4/400/260" alt="Inteligencia artificial" loading="lazy" />
+              <div class="cuerpo-tarjeta">
+                <p class="meta">
+                  <span class="categoria">Tecnología</span>
+                </p>
+                <h3 id="c4">
+                  Colección: Inteligencia Artificial y Regulación
+                </h3>
+                <p class="descripcion">
+                  Reúne hechos sobre políticas, marcos regulatorios,
+                  normativas y debates públicos alrededor de la IA.
+                </p>
+                <p class="meta-dos">
+                  <strong>Fuentes:</strong> 12 · <strong>Hechos:</strong> 34
+                </p>
+              </div>
+            </article>
           </div>
 
-          <div>
-            <h4>LEGAL</h4>
-            <ul>
-              <li><a href="#">Información Legal</a></li>
-              <li><a href="#">Términos y Privacidad</a></li>
-            </ul>
-          </div>
-
-          <div class="columna-vacia"></div>
-        </div>
-
-        <div class="pie-inferior">
-          <p>© 2025 MetaMap</p>
+          <button class="flecha-carousel derecha colecciones-derecha" aria-label="Siguiente colecciones">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+          </button>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+  </main>
+
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h3>Username</h3>
+      <p>Contribuyente</p>
+    </div>
+
+    <ul class="sidebar-menu">
+      <a href="misHechos.html">
+        <li><i class="fas fa-check-circle"></i><span>Mis Hechos</span></li>
+      </a>
+      <li><i class="fas fa-user-cog"></i><span>Mi Cuenta</span></li>
+    </ul>
+
+    <div class="circle-btn">+</div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <footer class="pie-sitio" role="contentinfo">
+    <div class="contenedor pie-interior">
+      <div class="pie-superior">
+        <div class="marca-pie">
+          <span class="caja-marca small">MetaMap</span>
+        </div>
+
+        <div class="redes" aria-hidden="true">
+          <i class="icon fa-brands fa-facebook-f"></i>
+          <i class="icon fa-brands fa-linkedin-in"></i>
+          <i class="icon fa-brands fa-youtube"></i>
+          <i class="icon fa-brands fa-twitter"></i>
+          <i class="icon fa-brands fa-instagram"></i>
+        </div>
+      </div>
+
+      <div class="grid-pie">
+        <div>
+          <h4>NOSOTROS</h4>
+          <ul>
+            <li><a href="#">Nuestro Equipo</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>LEGAL</h4>
+          <ul>
+            <li><a href="#">Información Legal</a></li>
+            <li><a href="#">Términos y Privacidad</a></li>
+          </ul>
+        </div>
+
+        <div class="columna-vacia"></div>
+      </div>
+
+      <div class="pie-inferior">
+        <p>© 2025 MetaMap</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

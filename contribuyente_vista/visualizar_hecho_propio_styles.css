@@ -295,6 +295,10 @@ a{
   font-size: 0.95rem;
 }
 
+.pointer {
+  cursor: pointer;
+}
+  
 .modal {
   position: fixed;
   inset: 0;
