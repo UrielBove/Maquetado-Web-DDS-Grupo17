@@ -1,6 +1,10 @@
 @import "/CSS/reset.css";
 @import "/CSS/styles.css";
 
+a{
+  all: unset;
+}
+
 .icon {
   cursor: pointer;
   font-size: 1.7rem;
@@ -412,58 +416,76 @@
   width: 280px;
   height: 100vh;
   background: var(--color-superficie);
-  box-shadow: -2px 0 8px var(--overlay-negro-10);
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
 }
 
 .sidebar.active {
   transform: translateX(0);
 }
 
-.sidebar h3 {
+.sidebar-header {
+  width: 100%;
+  height: 140px;
+  background-image: url('./AvatarSide.webp');
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0,0,0,0.4);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+.sidebar-header h3 {
   margin: 0;
-  font-size: 1.2rem;
-  color: var(--color-texto);
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
-.sidebar p {
-  margin: 0 0 20px;
-  font-size: 0.9rem;
-  color: var(--color-texto-secundario);
+.sidebar-header p {
+  margin: 5px 0 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
 }
 
-.sidebar ul {
+.sidebar-menu {
   list-style: none;
-  padding: 0;
+  padding: 20px;
   margin: 0;
   flex-grow: 1;
 }
 
-.sidebar ul li {
-  margin-bottom: 15px;
+.sidebar-menu li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
   font-size: 1rem;
   color: var(--color-texto);
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  transition: color 0.2s;
+  transition: color 0.2s ease;
 }
 
-.sidebar ul li:hover {
+.sidebar-menu li i {
+  font-size: 1.2rem;
   color: var(--color-navegacion);
 }
 
-.sidebar ul li i {
-  margin-right: 10px;
-  font-size: 1.1rem;
+.sidebar-menu li:hover {
+  color: var(--color-navegacion);
 }
 
-.sidebar .circle-btn {
+.circle-btn {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -473,25 +495,23 @@
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  font-size: 1.1rem;
-  margin: auto;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin: 20px auto;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.2s ease;
 }
 
-.sidebar .circle-btn:hover {
+.circle-btn:hover {
   background: var(--color-principal-700);
 }
 
-/* --- OVERLAY --- */
 .overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--overlay-negro-10);
+  background: rgba(0,0,0,0.3);
   display: none;
   z-index: 999;
 }

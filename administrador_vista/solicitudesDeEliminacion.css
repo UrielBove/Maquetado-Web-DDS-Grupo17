@@ -1,6 +1,8 @@
 @import "/CSS/reset.css";
 @import "/CSS/styles.css";
-
+a{
+  all: unset;
+}
 body {
   background-color: var(--color-superficie);
 }
