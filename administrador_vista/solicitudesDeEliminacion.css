@@ -501,3 +501,132 @@ body {
     max-width: 300px;
   }
 }
+
+.main-section {
+  padding: 40px;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  
+}
+
+.main-layout {
+  display: flex;
+  gap: 40px;
+  
+  border-radius: 12px;
+}
+
+/* Panel lateral dentro del main */
+.panel-lateral {
+  width: 5rem;
+  background-color: var(--color-principal-700);
+  border-radius: 12px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  color: white;
+  
+}
+
+.icon-item {
+  position: relative;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.icon-item:hover {
+  color: #bbdefb;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: red;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* Contenido principal */
+.contenido-principal {
+  flex: 1;
+}
+
+.contenido-principal h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.deletion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.deletion-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 95%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-type {
+  font-weight: bold;
+  color: #333;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: white;
+}
+
+.status::before {
+  content: '';
+  display: inline-block;
+  margin-right: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.deletion-card.new .status {
+  background-color: #F44336;
+}
+
+.deletion-card.rejected .status {
+  background-color: #F44336;
+}
+
+.deletion-card.approved .status {
+  background-color: #4CAF50;
+}
+
+.description {
+  font-size: 1rem;
+  color: #555;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #777;
+}

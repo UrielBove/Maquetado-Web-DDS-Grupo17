@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 const profileBtn = document.getElementById("profileBtn");
 const sidebar = document.getElementById("sidebar");
 const overlay = document.getElementById("overlay");
@@ -10,3 +11,5 @@ overlay.addEventListener("click", () => {
   sidebar.classList.remove("active");
   overlay.classList.remove("active");
 });
+})
+

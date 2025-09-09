@@ -13,6 +13,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
@@ -43,7 +45,7 @@
                 ><i class="icon fas fa-th-large"></i
               ></a>
             </li>
-            <li class="nav-con-texto"><a href="#">Centro de Ayuda</a></li>
+            <li class="nav-con-texto"><a href="index.html">Pagina principal</a></li>
             <li class="nav-con-texto"><a href="#">Hechos</a></li>
             <li class="nav-con-texto"><a href="#">Colecciones</a></li>
             <li class="profile-icon" id="profileBtn">
@@ -357,15 +359,21 @@
     </main>
 
     <div class="sidebar" id="sidebar">
-      <h3>Username</h3>
-      <p>Contribuyente</p>
-      <ul>
-        <li>Revisar hechos</li>
-        <li>Solicitudes de eliminación</li>
-        <li>Mi Cuenta</li>
-      </ul>
-    </div>
-    <div class="overlay" id="overlay"></div>
+  <div class="sidebar-header">
+    <h3>Username</h3>
+    <p>Administrador</p>
+  </div>      
+
+  <ul class="sidebar-menu">
+    <a href="revisarHechos.html"><li><i class="fas fa-check-circle"></i><span>Revisar hechos</span></li></a>
+    <a href="solicitudesDeEliminacion.html"><li><i class="fas fa-trash-alt"></i><span>Solicitudes de eliminación</span></li></a>
+    <li><i class="fas fa-user-cog"></i><span>Mi Cuenta</span></li>
+  </ul>
+
+  <div class="circle-btn">+</div>
+</div>
+<div class="overlay" id="overlay"></div>
+
 
     <footer class="pie-sitio" role="contentinfo">
       <div class="contenedor pie-interior">

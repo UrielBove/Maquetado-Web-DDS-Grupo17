@@ -501,3 +501,208 @@ body {
     max-width: 300px;
   }
 }
+
+
+
+
+
+
+
+
+.main-section {
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: var(--color-superficie);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  align-items: flex-start;
+}
+
+.main-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--color-encabezado);
+}
+
+.cards-wrapper {
+  border: 2px solid var(--color-navegacion); 
+  border-radius: 12px;
+  padding: 20px;
+  max-height: 70vh; 
+  overflow-y: auto;
+  background-color: #f9f9f9; 
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fact-card {
+  background-color: white;
+  border-radius: 12px;
+  border: 0.1rem solid black;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  min-width: 100%;
+  max-height: 10%;  
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  gap: 12px;
+}
+
+.avatar i {
+  font-size: 4rem;
+  color: var(--color-navegacion);
+}
+
+.username {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--color-texto);
+}
+
+.fact-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.text-content h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--color-texto);
+}
+
+.text-content p {
+  margin-top: 8px;
+  font-size: 1.2;
+  color: var(--color-texto-secundario);
+}
+
+.image-preview {
+  width: 200px;
+  height: 120px;
+  background-image: url('./AvatarSide.webp'); /* reemplazá con tu imagen */
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.accept,
+.reject {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.accept {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.reject {
+  background-color: #F44336;
+  color: white;
+}
+
+.accept:hover {
+  background-color: #45a049;
+}
+
+.reject:hover {
+  background-color: #e53935;
+}
+
+
+/* Fondo borroso */
+.overlay2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none; /* oculto por defecto */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Formulario centrado */
+.popup-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+}
+
+.popup-form h3 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: var(--color-texto);
+}
+
+.popup-form textarea {
+  width: 100%;
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.popup-actions {
+  margin-top: 20px;
+}
+
+.popup-accept {
+  padding: 10px 20px;
+  background-color: rgb(28, 28, 124);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.popup-accept:hover {
+  background-color: #45a049;
+}
+
+.close-popup {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #888;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.close-popup:hover {
+  color: #333;
+}

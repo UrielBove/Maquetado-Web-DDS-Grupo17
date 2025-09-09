@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Merriweather:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="misHechos.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="pagina">
+    <header class="encabezado-sitio" role="banner">
+      <div class="contenedor encabezado-interior">
+        <a class="marca" href="#" aria-label="MetaMap Home">
+          <span class="caja-marca">MetaMap</span>
+        </a>
+
+        <nav
+          class="nav-principal"
+          role="navigation"
+          aria-label="Menú principal"
+        >
+          <ul>
+            <li class="nav-con-iconos">
+              <a href="#" title="Centro de Ayuda"
+                ><i class="icon fas fa-question-circle"></i
+              ></a>
+            </li>
+            <li class="nav-con-iconos">
+              <a href="#" title="Hechos"><i class="icon fas fa-book"></i></a>
+            </li>
+            <li class="nav-con-iconos">
+              <a href="#" title="Colecciones"
+                ><i class="icon fas fa-th-large"></i
+              ></a>
+            </li>
+            <li class="nav-con-texto"><a href="index.html">Pagina principal</a></li>
+            <li class="nav-con-texto"><a href="#">Hechos</a></li>
+            <li class="nav-con-texto"><a href="#">Colecciones</a></li>
+            <li class="profile-icon" id="profileBtn">
+              <i class="fa-solid fa-user"></i>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mis-hechos">
+        <div class="encabezado-hechos">
+            <h2>Mis Hechos</h2>
+            <button class="btn-nuevo-hecho">
+            <i class="fa fa-plus"></i> SUBIR NUEVO HECHO
+            </button>
+        </div>
+        <p class="contador">Más de 300...</p>
+
+        <section class="cards-container">
+            <div class="card-hecho">
+                <img src="https://picsum.photos/300/200" alt="Imagen del hecho" class="img-hecho">
+
+                <div class="contenido-hecho">
+                    <div class="titulo-fecha">
+                    <h4 class="titulo-card">Título de Hecho</h4>
+                    <span class="fecha">Apr 1, 2025 • 9:41 AM</span>
+                    </div>
+
+                    <p class="ubicacion"><i class="fa fa-map-marker-alt"></i> Antezana 247, Miami</p>
+
+                    <button class="btn-ver"><a href="visualizar_hecho_propio.html">Ver Hecho</a></button>
+                </div>
+            </div>
+            <div class="card-hecho">
+                <img src="https://picsum.photos/300/200" alt="Imagen del hecho" class="img-hecho">
+
+                <div class="contenido-hecho">
+                    <div class="titulo-fecha">
+                    <h4 class="titulo-card">Título de Hecho</h4>
+                    <span class="fecha">Apr 1, 2025 • 9:41 AM</span>
+                    </div>
+
+                    <p class="ubicacion"><i class="fa fa-map-marker-alt"></i> Antezana 247, Miami</p>
+
+                    <button class="btn-ver"><a href="visualizar_hecho_propio.html">Ver Hecho</a></button>
+                </div>
+            </div>
+            <div class="card-hecho">
+                <img src="https://picsum.photos/300/200" alt="Imagen del hecho" class="img-hecho">
+
+                <div class="contenido-hecho">
+                    <div class="titulo-fecha">
+                    <h4 class="titulo-card">Título de Hecho</h4>
+                    <span class="fecha">Apr 1, 2025 • 9:41 AM</span>
+                    </div>
+
+                    <p class="ubicacion"><i class="fa fa-map-marker-alt"></i> Antezana 247, Miami</p>
+
+                    <button class="btn-ver"><a href="visualizar_hecho_propio.html">Ver Hecho</a></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <div class="sidebar" id="sidebar">
+          <div class="sidebar-header">
+             <h3>Username</h3>
+             <p>Contribuyente</p>
+           </div>      
+
+            <ul class="sidebar-menu">
+              <a href="misHechos.html"><li><i class="fas fa-check-circle"></i><span>Mis Hechos</span></li></a>
+              <li><i class="fas fa-user-cog"></i><span>Mi Cuenta</span></li>
+            </ul>
+
+            <div class="circle-btn">+</div>
+          </div>
+        <div class="overlay" id="overlay"></div>
+
+    <footer class="pie-sitio" role="contentinfo">
+      <div class="contenedor pie-interior">
+        <div class="pie-superior">
+          <div class="marca-pie">
+            <span class="caja-marca small">MetaMap</span>
+          </div>
+
+          <div class="redes" aria-hidden="true">
+            <i class="icon fa-brands fa-facebook-f"></i>
+            <i class="icon fa-brands fa-linkedin-in"></i>
+            <i class="icon fa-brands fa-youtube"></i>
+            <i class="icon fa-brands fa-twitter"></i>
+            <i class="icon fa-brands fa-instagram"></i>
+          </div>
+        </div>
+
+        <div class="grid-pie">
+          <div>
+            <h4>NOSOTROS</h4>
+            <ul>
+              <li><a href="#">Nuestro Equipo</a></li>
+              <li><a href="#">Preguntas Frecuentes</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>LEGAL</h4>
+            <ul>
+              <li><a href="#">Información Legal</a></li>
+              <li><a href="#">Términos y Privacidad</a></li>
+            </ul>
+          </div>
+
+          <div class="columna-vacia"></div>
+        </div>
+
+        <div class="pie-inferior">
+          <p>© 2025 MetaMap</p>
+        </div>
+      </div>
+    </footer>
+    </div>
+
+    <div class="modal" id="modalHecho">
+        <div class="modal-contenido">
+            <span class="cerrar" id="cerrarModal">&times;</span>
+            <h3>Nuevo Hecho</h3>
+            <form>
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" name="titulo" required>
+
+                <label for="fecha">Fecha</label>
+                <input type="datetime-local" id="fecha" name="fecha" required>
+
+                <label for="ubicacion">Ubicación</label>
+                <input type="text" id="ubicacion" name="ubicacion">
+
+                <label for="imagen">Imagen</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*">
+
+                <button type="submit" class="btn-enviar">Guardar Hecho</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

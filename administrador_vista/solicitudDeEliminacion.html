@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Merriweather:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="solicitudDeEliminacion.css" />
+    <script src="script.js" defer></script>
+    <title>Solicitud de eliminación</title>
+</head>
+<body>
+    <header class="encabezado-sitio" role="banner">
+      <div class="contenedor encabezado-interior">
+        <a class="marca" href="#" aria-label="MetaMap Home">
+          <span class="caja-marca">MetaMap</span>
+        </a>
+
+        <nav
+          class="nav-principal"
+          role="navigation"
+          aria-label="Menú principal"
+        >
+          <ul>
+            <li class="nav-con-iconos">
+              <a href="#" title="Centro de Ayuda"
+                ><i class="icon fas fa-question-circle"></i
+              ></a>
+            </li>
+            <li class="nav-con-iconos">
+              <a href="#" title="Hechos"><i class="icon fas fa-book"></i></a>
+            </li>
+            <li class="nav-con-iconos">
+              <a href="#" title="Colecciones"
+                ><i class="icon fas fa-th-large"></i
+              ></a>
+            </li>
+            <li class="nav-con-texto"><a href="#">Centro de Ayuda</a></li>
+            <li class="nav-con-texto"><a href="#">Hechos</a></li>
+            <li class="nav-con-texto"><a href="#">Colecciones</a></li>
+            <li class="profile-icon" id="profileBtn">
+              <i class="fa-solid fa-user"></i>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-section">
+  <div class="main-layout">
+    
+    <!-- Panel lateral integrado -->
+    <aside class="panel-lateral">
+      <div class="icon-item" title="Mensajes">
+        <i class="fas fa-envelope"></i>
+      </div>
+      <div class="icon-item" title="Notificaciones">
+        <i class="fas fa-bell"></i>
+        <span class="notification-badge">3</span>
+      </div>
+      <div class="icon-item" title="Configuración">
+        <i class="fas fa-cog"></i>
+      </div>
+    </aside>
+
+    <!-- Vista detallada -->
+    <section class="contenido-principal">
+      <h2>Detalle de solicitud</h2>
+      <hr>
+
+      <div class="detalle-card">
+        <div class="card-header">
+          <span class="user-type">Usuario Registrado</span>
+          <span class="status approved">APROBADO</span>
+        </div>
+
+        <h3 class="detalle-titulo">Título del hecho</h3>
+        <p class="detalle-descripcion">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti accusantium voluptatum quia labore est ipsum laudantium itaque consectetur nostrum nulla. Cupiditate impedit labore quas obcaecati perferendis nulla minima error eius.
+        </p>
+
+        <span class="date">2 de junio de 2025, 10:05</span>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3>Username</h3>
+            <p>Administrador</p>
+        </div>      
+
+        <ul class="sidebar-menu">
+            <li><i class="fas fa-check-circle"></i><span>Revisar hechos</span></li>
+            <li><i class="fas fa-trash-alt"></i><span>Solicitudes de eliminación</span></li>
+            <li><i class="fas fa-user-cog"></i><span>Mi Cuenta</span></li>
+        </ul>
+
+        <div class="circle-btn">+</div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+
+     <footer class="pie-sitio" role="contentinfo">
+      <div class="contenedor pie-interior">
+        <div class="pie-superior">
+          <div class="marca-pie">
+            <span class="caja-marca small">MetaMap</span>
+          </div>
+
+          <div class="redes" aria-hidden="true">
+            <i class="icon fa-brands fa-facebook-f"></i>
+            <i class="icon fa-brands fa-linkedin-in"></i>
+            <i class="icon fa-brands fa-youtube"></i>
+            <i class="icon fa-brands fa-twitter"></i>
+            <i class="icon fa-brands fa-instagram"></i>
+          </div>
+        </div>
+
+        <div class="grid-pie">
+          <div>
+            <h4>NOSOTROS</h4>
+            <ul>
+              <li><a href="#">Nuestro Equipo</a></li>
+              <li><a href="#">Preguntas Frecuentes</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>LEGAL</h4>
+            <ul>
+              <li><a href="#">Información Legal</a></li>
+              <li><a href="#">Términos y Privacidad</a></li>
+            </ul>
+          </div>
+
+          <div class="columna-vacia"></div>
+        </div>
+
+        <div class="pie-inferior">
+          <p>© 2025 MetaMap</p>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
